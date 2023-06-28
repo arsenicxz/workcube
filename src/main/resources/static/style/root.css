@@ -1,0 +1,33 @@
+:root{
+    --font:'Inter', sans-serif;
+    --font-size-regular:16px;
+    --font-size-medium: 20px;
+    --font-size-big:26px;
+    --font-size-extrabig:72px;
+
+    --navbar-height: 70px;
+    --content-width: 100%;
+
+    --main-font-color: #000000;
+    --secondary-font-color: #AFAFAF;
+    --body-background-color: #FFFFFF;
+
+    --standart-stroke-color: #AFAFAF;
+    --light-gray-color: #F0F0F0;
+    --gray-color: #E0E0E0;
+    --dark-gray-color: #797979;
+
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+
+    --accent-color: #9E00FF;
+    --dark-accent-color: #7D00C9;
+
+    --error-red-color: #FFC5C5;
+
+    --z-index-overlay: 9;
+    --z-index-dropdown: 10;
+    --z-index-modal:12;
+    --z-index-tooltip:14;
+    --z-index-alert:16;
+}

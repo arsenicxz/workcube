@@ -1,0 +1,136 @@
+body{
+    background-color: #f8f8f8;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+main .container{
+    margin-top: calc(var(--navbar-height) + 10px);
+    width: 75%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card{
+    background-color: var(--white-color);
+    width: calc(100% - 300px);
+    justify-self: flex-end;
+    margin-left: 300px;
+    /*flex:1;*/
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--standart-stroke-color);
+    /*outline: 1px solid var(--standart-stroke-color);*/
+}
+
+.card.place{
+
+    margin-left: 0px;
+    position: fixed;
+    flex: none;
+    width: 290px;
+    padding: 0px;
+    height: 330px;
+}
+
+.image{
+    height: 60%;
+    background-color: var(--light-gray-color);
+}
+
+.place-info{
+    height: 40%;
+    padding: 10px;
+
+}
+
+.place-name{
+    height: 70%;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 500;
+}
+
+.place-extra-info{
+
+    display: flex;
+    align-items: center;
+    height: 30%;
+    justify-content: space-between;
+
+
+}
+
+.review-block{
+    margin-bottom: 14px;
+}
+
+.rating{
+    border: none;
+}
+
+.rating__caption{
+    margin-bottom: 6px;
+}
+
+.comment-block{
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+@media (max-width: 620px) {
+    .radio-badges{
+        width: 100%;
+    }
+    .radio-badges-group{
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+    .radio-badges__title.first{
+        border-radius: 8px;
+    }
+    .radio-badges__title{
+        border-radius: 8px;
+    }
+    .radio-badges__title.last{
+        border-radius: 8px;
+    }
+    .buttons{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 750px) {
+    main .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1128px) {
+    main .container{
+        flex-direction: column;
+    }
+    .card.place{
+        position: relative;
+
+    }
+    .card{
+        width: 100%;
+        margin-left: 0;
+    }
+    .for-big{
+        display: none;
+    }
+}

@@ -1,0 +1,198 @@
+body{
+    background-color: #f8f8f8;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: calc(var(--navbar-height) + 10px);
+    padding-bottom: 100px;
+}
+
+#map {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    padding-top: var(--navbar-height);
+}
+
+.map-button{
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 175px);
+    width: 350px;
+}
+
+.main .content{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.list{
+    width: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0 calc((100% - (290px * 4 + 30px)) / 2);
+}
+
+/* Стили для средних и больших экранов */
+
+
+.card{
+    position: relative;
+    text-decoration: none;
+    color: var(--black-color);
+    z-index: 0;
+    overflow: hidden;
+    height: 330px;
+    width: 290px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-color);
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    background-color: #FFFFFF;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    text-decoration: none;
+    color: var(--black-color);
+}
+.card:visited {
+    /* Цвет посещённой ссылки */
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.card:active {
+    /* Цвет ссылки при клике */
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.image{
+    height: 60%;
+    background: var(--light-gray-color);
+    overflow: hidden;
+}
+
+.image-content{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.place-info{
+    height: 40%;
+    padding: 10px;
+
+}
+
+.place-name{
+    height: 70%;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 500;
+}
+
+.place-extra-info{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    justify-content: space-between;
+}
+
+.place-tags{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*height: 47%;*/
+    gap: 3px;
+}
+
+.tag{
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+.baloon-content{
+    display: flex;
+    flex-direction:
+    column; padding: 2px;
+}
+
+.baloon-description{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+}
+
+.baloon-img-container{
+    width: 240px;
+    height: 160px;
+    margin-bottom: 5px;
+}
+
+
+
+@media (max-width: 310px) {
+    .card{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 674px) {
+    .list {
+        padding: 0 calc((100% - 290px) / 2);
+    }
+}
+
+
+@media (min-width: 675px) {
+    .list {
+        padding: 0 calc((100% - (290px * 2 + 10px)) / 2);
+    }
+}
+
+@media (min-width: 1008px) {
+    .list {
+        padding: 0 calc((100% - (290px * 3 + 20px)) / 2);
+    }
+
+}
+
+@media (max-width: 990px) {
+    .map-button{
+        bottom: 90px;
+        left: calc(50% - 94px);
+        width: 190px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1325px) {
+    .list {
+        padding: 0 calc((100% - (290px * 4 + 30px)) / 2);
+    }
+}
+
+/** {*/
+/*    outline: 1px solid red !important;*/
+/*}*/
